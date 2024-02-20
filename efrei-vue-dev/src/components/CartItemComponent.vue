@@ -1,12 +1,19 @@
 <template>
   <article class="cart-item">
+    
     <figure class="cart-item__figure">
       <img 
         :src="cartItem.product.url" 
         :alt="cartItem.product.name" 
       >
+      
     </figure>
+    <div class="cartinfo">
+      <h3>{{ cartItem.product.name }}</h3>
+      <h3>$ {{ cartItem.product.price }}</h3>
+    </div>
     <section class="cart-item__info">
+      
       <font-awesome-icon 
         :icon="['fas', 'minus']" 
         @click="onMinusClick(cartItem.product)" 
@@ -22,9 +29,17 @@
   </article>
 </template>
 <script setup>
+
+
 import { removeFromCart, addToCart } from "../stores/cart-store"
+
+
 defineProps({
+
+  data:Object,
+
   cartItem: {
+    
     type: Object,
     default: null,
   },

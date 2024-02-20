@@ -2,7 +2,7 @@
   <main class="home-page">
     <TitleComponent h-type="h1" text-content="BuyPc" data-info="hello" />
     <section class="home-page__actions">
-      <button @click="onClick">Voir nos produits</button>
+      <button @click="onClick">All products</button>
     </section>
   </main>
 </template>

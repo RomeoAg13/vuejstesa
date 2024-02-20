@@ -1,8 +1,8 @@
 <template>
   <main class="not-found-page">
-    <h1>Page inexistante</h1>
+    <h1>Nothing Here</h1>
     <RouterLink to="/"> 
-      Revenir à la page d'accueil 
+      Come Back
     </RouterLink>
   </main>
 </template>

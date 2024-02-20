@@ -9,6 +9,7 @@
           :cart-item="item"
         />
       </section>
+      
     </Transition>
     <Transition>
       <section 
