@@ -8,15 +8,15 @@
     <nav>
       <ul>
         <li>
-          <font-awesome-icon
-            :icon="['fas', 'shop']"
+          <a
+            text="Shop"
             @click="onShopClick"
           />
         </li>
 
         <li class="bag-icon-li">
-          <font-awesome-icon
-            :icon="['fas', 'shopping-bag']"
+          <a
+            text="Cart"
             class="app-header__icon"
             @click="onCartClick"
           />
@@ -25,8 +25,8 @@
           }}</small>
         </li>
         <li>
-          <font-awesome-icon
-            :icon="['fas', 'sign-in-alt']"
+          <a
+            text="Login"
             class="app-header__icon"
             @click="onLoginClick"
           />
@@ -85,17 +85,14 @@ onUnmounted(() => {
 
 <style scoped lang="scss">
 .app-header {
-  height: 8vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  height: auto;
   z-index: 10;
   box-shadow: 1px 1px 5px gray;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 5px;
+  width: 100%;
 
   figure {
     height: 50px;

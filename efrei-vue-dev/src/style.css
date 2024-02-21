@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
@@ -68,7 +70,7 @@ video {
 
 
 #app {
-
+  flex-wrap: wrap;
   height: 100vh;
   width: 100vw;
   display: flex;

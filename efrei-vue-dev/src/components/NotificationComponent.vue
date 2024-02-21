@@ -7,6 +7,12 @@
     <p> {{ state.content }}</p>
   </aside>
 </template>
+
+
+
+
+
+
 <script setup>
 import { onMounted } from "vue";
 import { state } from "../stores/message-store"
@@ -16,6 +22,16 @@ onMounted(() => {
 })
 
 </script>
+
+
+
+
+
+
+
+
+
+
 <style scoped lang="scss">
 .notification-component {
     display: flex;

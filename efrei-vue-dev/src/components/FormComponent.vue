@@ -18,8 +18,6 @@
 import { ref, watch, onMounted, reactive } from "vue";
 import InputComponent from "./InputComponent.vue";
 
-// vous permet de faire comprendre à l'enfant qu'il doit attendre
-// de son parent des propriétés
 const { buttonTextContent, onFormSubmit , formInputs } = defineProps({
     buttonTextContent: String,
     formInputs:Array,
@@ -54,7 +52,3 @@ onMounted(() => {
 }
 
 </style>
-
-<!-- HEADER -->
-<!-- trouver le moyen d'installer fontawesome dans votre application -->
-<!-- créer une fonction qui va se déclecher au clic sur un icon de header-->

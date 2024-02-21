@@ -1,3 +1,8 @@
+
+
+
+
+
 <template>
   <main class="cart-page" role="main" aria-labelledby="main-title">
     <TitleComponent h-type="h1" :title="'Panier'" id="main-title" />
@@ -24,6 +29,12 @@
     </Transition>
   </main>
 </template>
+
+
+
+
+
+
 <script setup>
 import { onMounted } from "vue";
 import TitleComponent from "../components/TitleComponent.vue";
@@ -34,6 +45,21 @@ onMounted(() => {
   console.log("🟠 CartPage has mounted", cartGetter);
 });
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <style scoped lang="scss">
 .cart-page {
   height: 100%;

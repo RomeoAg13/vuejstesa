@@ -86,7 +86,7 @@ const onAddClick = (product) => {
   align-content: center;
   align-items: center;
   position: relative;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .name h3 {
