@@ -33,12 +33,9 @@ const { getProducts } = productStore;
 const { productsGetter } = storeToRefs(productStore);
 const products = computed(() => productsGetter.value);
 
-let timer = null;
-
 onUnmounted(() => {
   console.log("Shop has unmounted");
   setNewMessage({ title: "", type: "", content: "" });
-  clearTimeout(timer);
 });
 </script>
 <style scoped lang="scss">
